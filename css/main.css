@@ -1,0 +1,71 @@
+@import url(reset.css);
+/* main.css */
+body{font-family: 'Noto Sans KR',sans-serif; font-size: 18px; color: #2e2d41;}
+a{color: #2e2d41; text-decoration: none;}
+
+/* container */
+#container{position: relative; width: 100vw; height: 100vh;}
+#container > div{float: left; width: 100vw; height: 100vh; font-size: 18px; color: #2e2d41; background: #fff;}
+#container > div > section{position: relative; width: 100%; height: 100%; overflow: hidden;}
+
+/* main */
+@keyframes start {
+    25%{transform: scale(1.1);}
+    75%{transform: scale(0.8);}
+}
+
+@keyframes sc {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+@keyframes up1{
+    0%{transform: translateY(1000px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes up2{
+    0%{transform: translateY(800px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes up3{
+    0%{transform: translateY(600px);}
+    100%{transform: translateY(0px);}
+}
+
+#main > section > .background{position: relative; width: 1920px; height: 1080px; background: #6c62ff; opacity: 0.5;}
+
+#main > section > .toptext{position: absolute; top: 78px; left: 105px; width: 1710px; height: 29.2px;}
+#main > section > .toptext > ul > li{position: absolute; font-size: 24px; color: #fff; line-height: 32px; font-family: ' MADETOMMY'; letter-spacing: 0.22px; float: left; animation: sc 1s linear normal;}
+#main > section > .toptext > ul > li:nth-child(1){left: 0; top: 0;}
+#main > section > .toptext > ul > li:nth-child(2){left: 767.5px; top: 0;}
+#main > section > .toptext > ul > li:nth-child(3){left: 1539px; top: 0;}
+
+#main > section > .cont{position: absolute; width: 1710px; height: 652.7px; top: 375.6px; left: 105px;}
+#main > section > .cont > p{position: absolute;}
+#main > section > .cont > img{position: absolute;}
+#main > section > .cont > p:nth-child(1){font-size: 120px; font-weight: bold; line-height: 144px; letter-spacing: 1.08px; font-family: 'MADETOMMY'; top: 202.3px; left: 0; animation: up1 1.3s linear normal;}
+#main > section > .cont > p:nth-child(2){font-size: 60px; font-weight: bold; line-height: 72px; letter-spacing: 1.5px; font-family: 'MADETOMMY'; top: 276.9px; left: 1059.4px; color: #fff; z-index: 3;
+                                    animation: start 2s linear infinite alternate;}
+#main > section > .cont > p:nth-child(2) > a{color: #fff;}
+#main > section > .cont > p:nth-child(3){font-size: 20px; font-weight: bold; line-height: 72px; letter-spacing: 1.5px; font-family: 'MADETOMMY'; bottom: 0; left: 0;  z-index: 3; opacity: 0.7; animation: up3 1.8s linear normal;}
+#main > section > .cont > p:nth-child(4){left: 2.5px; top: 378.3px; width: 392px; height: 88px; animation: up2 1.5s linear normal;}
+#main > section > .cont > p:nth-child(5){right: 0; top: 0; width: 982px; height: 653px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
